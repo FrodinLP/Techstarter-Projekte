@@ -6,6 +6,6 @@ if [ $# -ne 1 ]; then
 	exit 1
 fi
 
-cp "/mnt/c/Users/Ingo Neubert/Downloads/key.pem" ~/key.pem
+cp "/mnt/c/Users/USERNAME/Downloads/key.pem" ~/key.pem
 chmod u+r,g-rwx,o-rwx ./key.pem
 ssh -i ./key.pem ec2-user@"$1"
